@@ -28,3 +28,23 @@ The Pharaoh-21 Index uses a fully automated and data-driven approach to select a
 
 The index relies on real-time data to evaluate runes based on market capitalization, number of holders, and transaction volume. Currently, the primary data source is the Unisat API, a reliable provider of Bitcoin rune data. However, we acknowledge that Unisat is not the most liquid platform, and we are actively working to integrate the Geniidata API soon to enhance data accuracy and coverage.
 
+## 2.2 Variables Used in the Selection of Runes for the Pharaoh Index
+
+The **Pharaoh Index** evaluates runes based on three primary variables:
+
+### 2.2.1. Market Capitalization (MC)
+- **What it measures:** The total market value of a rune.
+- **Why it matters:** Reflects the size and economic significance of a rune.
+
+### 2.2.2. Number of Holders
+- **What it measures:** The total number of unique addresses holding a rune.
+- **Why it matters:** Indicates broader distribution and adoption.
+
+### 2.2.3. Number of Transactions
+- **What it measures:** The total number of transactions involving a rune over a specific period.
+- **Why it matters:** Reflects active use and community engagement.
+
+### 2.2.4. Number of Mentions in Social
+- **What it measures:** The total number of mentions of the token on social media over a specified period of time.
+- **Why it matters:** Why it matters: Reflects the level of community engagement and activity.
+
