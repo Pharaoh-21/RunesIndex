@@ -28,23 +28,62 @@ The Pharaoh-21 Index uses a fully automated and data-driven approach to select a
 
 The index relies on real-time data to evaluate runes based on market capitalization, number of holders, and transaction volume. Currently, the primary data source is the Unisat API, a reliable provider of Bitcoin rune data. However, we acknowledge that Unisat is not the most liquid platform, and we are actively working to integrate the Geniidata API soon to enhance data accuracy and coverage.
 
-## 2.2 Variables Used in the Selection of Runes for the Pharaoh Index
+### 2.2 Variables Used in the Selection of Runes for the Pharaoh Index
 
 The **Pharaoh Index** evaluates runes based on three primary variables:
 
-### 2.2.1. Market Capitalization (MC)
+#### 2.2.1. Market Capitalization (MC)
 - **What it measures:** The total market value of a rune.
 - **Why it matters:** Reflects the size and economic significance of a rune.
 
-### 2.2.2. Number of Holders
+#### 2.2.2. Number of Holders
 - **What it measures:** The total number of unique addresses holding a rune.
 - **Why it matters:** Indicates broader distribution and adoption.
 
-### 2.2.3. Number of Transactions
+#### 2.2.3. Number of Transactions
 - **What it measures:** The total number of transactions involving a rune over a specific period.
 - **Why it matters:** Reflects active use and community engagement.
 
-### 2.2.4. Number of Mentions in Social
+#### 2.2.4. Number of Mentions in Social (Future input)
 - **What it measures:** The total number of mentions of the token on social media over a specified period of time.
 - **Why it matters:** Why it matters: Reflects the level of community engagement and activity.
+
+### 2.3 Optimal Number of Clusters (Automated Elbow Method)
+
+To determine the optimal number of clusters automatically, we implemented an **Automated Elbow Method**:
+
+**WCSS Calculation**: K-Means was applied for \( k = 1 \) to \( k = 10 \), and WCSS (Within-Cluster Sum of Squares) was computed.
+
+**Second Derivative**: The second derivative of the WCSS curve was calculated to identify the point of maximum curvature (the "elbow").
+
+**Optimal \( k \) Selection**: The algorithm automatically selected the \( k \) at the elbow point as the optimal number of clusters.
+
+This approach eliminates visual subjectivity and ensures reproducibility.
+
+
+### 2.4 Clustering
+
+After determining the optimal number of clusters (\( k \)), we applied the **K-Means** algorithm to group the data:
+
+**Centroid Initialization**: Centroids were initialized using the K-Means++ method.
+
+**Point Assignment**: Each data point was assigned to the nearest centroid using Euclidean distance.
+
+**Centroid Update**: Centroids were recalculated as the mean of all points in the cluster.
+
+**Iteration**: The process was repeated until convergence.
+
+
+### 2.5 Selection of Clusters
+
+After clustering, the most relevant clusters were selected based on:
+
+1. **Cluster Profiling**: Size, centroid values, and distribution.
+2. **Quality Metrics**: Silhouette Score and Inertia (WCSS).
+3. **Relevance to Objectives**: Alignment with the goals of the Pharaoh Index.
+4. **Outlier Detection**: Handling of small or sparse clusters.
+
+The selected clusters were used as inputs for the Pharaoh Index calculation.
+
+### 2.6 Pharaoh Index
 
