@@ -1,4 +1,4 @@
-# General Pharaoh Index of Runes  𓋗
+# General Pharaoh Index of Runes  𓋖
 
 ## 1. Introduction
 
