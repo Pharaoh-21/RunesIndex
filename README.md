@@ -8,7 +8,7 @@ The **General Pharaoh Index of Runes (GPIR)** is an innovative and automated ind
 In ancient Egypt, the pharaoh was a divine leader whose decisions were guided by higher principles. In the **General Pharaoh Index of Runes**, the "power of the pharaoh" translates into a **100% automated system** that selects and weights runes objectively, without human intervention. Runes are not chosen by people but by algorithms analyzing real-time data, ensuring fairness and transparency.
 
 ### The Legacy of Egyptian Crowns 
-### 𓋔𓋗𓋓𓋖𓋕𓋘𓋒𓋛𓋑𓋙𓋚
+### 𓋔 𓋗 𓋓 𓋖 𓋕 𓋘 𓋒 𓋛 𓋑 𓋙 𓋚
 
 In the BRC-20 protocol of Bitcoin, it is possible to inscribe 4-byte symbols, including Egyptian hieroglyphs. The **GPIR** is the **proud and exclusive owner of all inscribed Egyptian crowns**, a collection of unique and historically significant symbols that now live on the Bitcoin blockchain. These crowns are not just digital assets; they are a bridge between ancient history and modern technology.
 
