@@ -23,7 +23,7 @@ The **General Pharaoh Index of Runes** is not just a technical tool; it is a **t
 
 ## 2.Methodology
 
-The Pharaoh-21 Index uses a fully automated and data-driven approach to select and weight the 21 most important runes in the Bitcoin ecosystem. The methodology is designed to ensure transparency, fairness, and accuracy, eliminating any human bias. Below, we break down the key components of the selection process.
+The **General Pharaoh Index of Runes (GPIR)** Index uses a fully automated and data-driven approach to select and weigh the most important runes in the Bitcoin ecosystem. The methodology is designed to ensure transparency, fairness, and accuracy, eliminating any human bias. Below, we break down the key components of the selection process.
 
 ### 2.1. Data Collection
 
